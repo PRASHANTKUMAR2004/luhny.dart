@@ -119,6 +119,18 @@ int addImportantDoubleDigits(String imei){
 
 /// Gets the last item of a string array and returns it.
 String getLastItem(List<String> arr) {
+    if (arr.isEmpty) {
+        // Handle the case when the list is empty, return a default value or null.
+        // For example:
+        // return '';
+        return ''; // Or return null if you prefer.
+    }
+
+    int arrayLength = arr.length;
+    int lastItemIndex = arrayLength - 1;
+    return arr[lastItemIndex];
+}
+String getLastItem(List<String> arr) {
     int arrayLength = arr.length;
     int lastItemIndex = arrayLength -1;
     return arr[lastItemIndex];
